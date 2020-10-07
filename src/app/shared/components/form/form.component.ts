@@ -2,8 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { Observable } from 'rxjs';
 import { finalize, map, tap } from 'rxjs/operators';
-import { User } from './models/user.interface';
-import { UserService } from './services/user.service';
+import { User } from '../../models/user.interface';
+import { UserService } from '../../services/user.service';
 
 @Component({
   selector: 'app-form',
