@@ -1,19 +1,18 @@
 {
   "data": {
-    "id": 1,
-    "firstname": "aaa",
-    "lastname": "bbb",
-    "gender": "female",
+    "firstName": "Rack",
+    "lastName": "Jackon",
+    "gender": "man",
     "age": 24,
     "address": {
-      "city": "Sant Boi de llobregat",
-      "state": "B",
-      "postalCode": 8830,
-      "streetAddress": "c/ benviure 30 A"
+      "streetAddress": "126",
+      "city": "San Jone",
+      "state": "CA",
+      "postalCode": "394221"
     },
     "phoneNumbers": [
       {
-        "type": "+34665827856",
+        "type": "home",
         "number": "7383627627"
       }
     ]
