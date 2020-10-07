@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
-import { Observable } from 'rxjs';
-import { finalize, map, tap } from 'rxjs/operators';
+import { finalize, map } from 'rxjs/operators';
 import { User } from '../../models/user.interface';
 import { UserService } from '../../services/user.service';
 
@@ -45,8 +44,8 @@ export class FormComponent implements OnInit {
    */
   saveUser(): void {
     this.user = {
-      firstname: this.formGroup.controls.firstName.value,
-      lastname: this.formGroup.controls.lastName.value,
+      firstName: this.formGroup.controls.firstName.value,
+      lastName: this.formGroup.controls.lastName.value,
       gender: this.formGroup.controls.gender.value,
       age: this.formGroup.controls.age.value,
       address: {
@@ -93,9 +92,8 @@ export class FormComponent implements OnInit {
    * Set initial values
    */
   setDefaultValue(): void {
-    // this.formGroup.patchValue(this.user);
-    this.formGroup.controls.firstName.setValue(this.user.firstname);
-    this.formGroup.controls.lastName.setValue(this.user.lastname);
+    this.formGroup.controls.firstName.setValue(this.user.firstName);
+    this.formGroup.controls.lastName.setValue(this.user.lastName);
     this.formGroup.controls.gender.setValue(this.user.gender);
     this.formGroup.controls.age.setValue(this.user.age);
   }
