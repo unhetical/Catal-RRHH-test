@@ -1,0 +1,21 @@
+{
+  "data": {
+    "id": 1,
+    "firstname": "aaa",
+    "lastname": "bbb",
+    "gender": "female",
+    "age": 24,
+    "address": {
+      "city": "Sant Boi de llobregat",
+      "state": "B",
+      "postalCode": 8830,
+      "streetAddress": "c/ benviure 30 A"
+    },
+    "phoneNumbers": [
+      {
+        "type": "+34665827856",
+        "number": "7383627627"
+      }
+    ]
+  }
+}
